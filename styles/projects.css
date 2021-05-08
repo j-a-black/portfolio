@@ -1,0 +1,72 @@
+.section-project {
+  max-width: 768px;
+  margin: 5rem auto;
+}
+
+.section-project > h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 0 0.2rem;
+}
+
+.project-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  border: 1px solid #555;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.project-item > h2 {
+  margin: 1rem 1rem;
+  font-size: 1.5rem;
+}
+
+.project-item > ul {
+  /* in the event one is needed */
+  margin: 0 0 1rem;
+}
+
+.project-item > p {
+  margin: 0.25em 1rem 1rem;
+  line-height: 1.2rem;
+}
+
+.project-item > img {
+  order: -1;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: none;
+  border-radius: 1rem;
+  align-self: center;
+}
+
+.project-item > a {
+  background-color: #34495e;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  text-align: center;
+  color: #f6f8f8;
+  text-decoration: none;
+}
+
+.project-item > a:active,
+.project-item > a:visited {
+  color: #f6f8f8;
+}
+
+@media screen and (min-width: 425px) {
+  .project-item > a:hover {
+    background-color: #587ca0;
+    transition: 250ms ease-in-out;
+  }
+}
