@@ -1,0 +1,34 @@
+.page-container {
+  margin: 2rem auto 0 auto;
+  padding: 0 0.2rem;
+  width: 100%;
+  max-width: 768px;
+  font-family: $montserrat;
+  line-height: 1.5rem;
+
+  h1,
+  h2 {
+    font-weight: 300;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: orange;
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ol > li {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+}
+
+.page-container > * {
+  margin-bottom: 2rem;
+}

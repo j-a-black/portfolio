@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: $roboto;
+  overflow-x: hidden;
+}
+
+section,
+footer {
+  padding: 10em 0.2rem;
+  display: grid;
+  place-items: center;
+}
+
+section:nth-of-type(odd) {
+  background-color: #f0f0f0;
+}

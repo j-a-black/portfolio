@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <title>Mortgage Calculator</title>
+    <script src="../js/main.js" type="module"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <span><a href="../index.html">J A Black</a></span>
+          </div>
+          <ul class="navbar__links">
+            <li><a class="link-js" href="../index.html">home</a></li>
+            <li><a class="link-js" href="../index.html#about">about</a></li>
+            <li><a class="link-js" href="../index.html#projects">projects</a></li>
+          </ul>
+          <div class="navbar__hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </nav>
+    <main>
+      <div class="page-container">
+
+          <h1>Mortgage Calculator</h1>
+          <p>
+            Code:
+            <a
+              href="https://github.com/j-a-black/mortgage-calculator"
+              target="_blank"
+              >Repository</a
+            >
+          </p>
+          <p>
+            Website:
+            <a
+              href="https://www.mortgagecalculator.jasonanthonblack.com"
+              target="_blank"
+              >View Site</a
+            >
+          </p>
+          <img src="../images/mortgageCalc.png" alt="mortgage calculator" />
+
+          <h2>Purpose and Objectives</h2>
+          <p>
+            The purpose of the project was to create a simple app that would
+            allow to me expand my understanding of State and Event Listeners. My
+            objectives were to:
+          </p>
+          <ol>
+            <li>
+              Initialize state containing the preset values declared in the
+              input fields
+            </li>
+            <li>
+              Update the state using an event handler that listens for input
+            </li>
+            <li>
+              Display the dynamic changes in values using a pie chart from
+              <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>
+            </li>
+          </ol>
+          <h2>Challenges</h2>
+          <p>
+            When using an event handler to update the state, my knowledge of the
+            type of information events pass was very limited. I conducted
+            searches to first learn what an event is, followed by the properties
+            available in the event interface, and lastly, how using the target
+            property to specifically target the name and value of the element
+            can be used to update the state.
+          </p>
+          <p>
+            In time, I learned that event.target.name and event.target.value
+            were the two event properties that contained the information needed
+            to update the state.
+          </p>
+    </main>
+    <footer class="footer">
+        <h2>CONTACT</h2>
+        <span>Email: jasonanthonblack@gmail.com</span>
+      </footer>
+  </body>
+</html>

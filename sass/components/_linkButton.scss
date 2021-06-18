@@ -1,0 +1,22 @@
+.link-btn {
+  border: 1px solid $midnight-bkg-color;
+  border-radius: 1rem;
+  background-color: $midnight-bkg-color;
+  padding: 0.5rem 2rem;
+  color: $secondary-font-color;
+  text-decoration: none;
+  display: inline-block;
+  font: $montserrat;
+  font-weight: 100;
+}
+
+.link-btn:active {
+  transform: scale(0.98);
+}
+
+// @media screen and (min-width: 425px) {
+//   .link-btn:hover {
+//     background-color: #587ca0;
+//     transition: 250ms ease-in-out;
+//   }
+// }
