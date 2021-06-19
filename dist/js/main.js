@@ -1,6 +1,11 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", initApp);
+// Making sure the DOM is finished loading so the app can work off the body of the DOM
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initApp); // once loaded, it calls ready function
+} else {
+  initApp(); // if it's already loaded, then ready function is called
+}
 
 function initApp() {
   const hamburger = document.querySelector(".navbar__hamburger");
