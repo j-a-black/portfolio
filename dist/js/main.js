@@ -10,11 +10,15 @@ if (document.readyState === "loading") {
 function initApp() {
   const hamburger = document.querySelector(".navbar__hamburger");
   const dropdownMenu = document.querySelector(".navbar__links");
+  const body = document.body;
 
   // Changes hamburger menu button into an 'X' and opens mobile menu
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("toggle");
     dropdownMenu.classList.toggle("open");
+    dropdownMenu.classList.contains("open")
+      ? (body.style.position = "fixed")
+      : (body.style.position = "relative");
   });
 
   // Clicking on mobile menu links will cause the menu to close
@@ -24,6 +28,7 @@ function initApp() {
     link.addEventListener("click", () => {
       hamburger.classList.toggle("toggle");
       dropdownMenu.classList.toggle("open");
+      if (body.style.position === "fixed") body.style.position = "relative";
     });
   }
 }
