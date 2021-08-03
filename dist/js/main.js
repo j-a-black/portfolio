@@ -15,8 +15,8 @@ function initApp() {
   // Changes hamburger menu button into an 'X' and opens mobile menu
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("toggle");
-    dropdownMenu.classList.toggle("open");
-    dropdownMenu.classList.contains("open")
+    dropdownMenu.classList.toggle("nav__toggle-menu");
+    dropdownMenu.classList.contains("nav__toggle-menu")
       ? (body.style.position = "fixed")
       : (body.style.position = "relative");
   });
@@ -27,7 +27,7 @@ function initApp() {
     let link = navLinks[i];
     link.addEventListener("click", () => {
       hamburger.classList.toggle("toggle");
-      dropdownMenu.classList.toggle("open");
+      dropdownMenu.classList.remove("nav__toggle-menu");
       if (body.style.position === "fixed") body.style.position = "relative";
     });
   }
